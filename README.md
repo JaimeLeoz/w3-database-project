@@ -7,11 +7,22 @@ The goal of this project is to build your own database from several csv files. F
 
 ## TO DO's
 
-1. Explore the data and write down what you have found
+1. Explore the data and write down what you have found ( hacer eda, y limpieza)
    - you can use: `df.describe()`, `df["column"]`, etc.
 1. Clean the data (you can get rid of columns that doesn't give information)
-1. Build your databse
-1. Write at least 10 queries including: join, groupby, orderby, where, subqueries….that you think will be useful to get interesting insights from the data.**(SELECT* FROM TABLE_NAME doesn't count...)** 
+1.2 piensa como  juntaras las tablas ya que puedes subirlas a capon de csv a sql con python - es lo mas adecuado
+   despues al hacer ERD , podemos decidir que conexiones entre tablas hacer y de ahi ya nos pillas las foreing keys. Pero hay que ir con cuidado para que nos pille bien
+   las primary keys
+1.3
+
+2. Build your databse
+3.
+4 Write at least 5-6 queries including: join, groupby, orderby, where, subqueries….that you think will be useful to get interesting insights from the data.**(SELECT* FROM TABLE_NAME doesn't count...)** 
+
+CREA EL README Y MINI POWERPOINT
+
+alter table - 
+
 + Bonus: Get creative!!! Create totally new tables or enrich the csv files with new data (found on the internet or even made up) that makes your database more valuable.
 
 
