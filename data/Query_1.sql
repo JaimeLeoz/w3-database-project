@@ -6,7 +6,8 @@ from film as f
 join actor as a
 on f.film_id = a.actor_id
 
-group by a.complete_name 
+group by a.complete_name
+order by sum_titles desc
 
 
 
