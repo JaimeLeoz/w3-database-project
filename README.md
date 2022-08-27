@@ -5,15 +5,34 @@
 
 The goal of this project is to build your own database from several csv files. For this project, you will start with 6 `csv` files. You will need to download it, import it, use your data wrangling skills to clean it up, have a first look at the data to figure out out to structure it, prepare it to be loaded in a sql database and finally build it. Some graphs to better understand the data will surely be useful!!
 
-## TO DO's
+## Pasos en la importación
 
-1. Explore the data and write down what you have found ( hacer eda, y limpieza)
-   - you can use: `df.describe()`, `df["column"]`, etc.
-1. Clean the data (you can get rid of columns that doesn't give information)
-1.2 piensa como  juntaras las tablas ya que puedes subirlas a capon de csv a sql con python - es lo mas adecuado
-   despues al hacer ERD , podemos decidir que conexiones entre tablas hacer y de ahi ya nos pillas las foreing keys. Pero hay que ir con cuidado para que nos pille bien
-   las primary keys
-1.3
+Los primeros pasos han sido importar los archivos de cada tabla para poder revisar sus contenidos y decidir como organizarlos
+
+El siguiente paso ha sido revisar si necesitaban cambios como limpiarlos, en concreto ha habido pocos cambios:
+
+   > Se ha asegurado que no haya nulos
+   > Que no hay duplicados
+   > Al final se ha dejado alguna columna como base por si el cliente quiere manteneral actualizada ( las_update)
+
+
+## Subida de los contenidos a la DB en SQL
+
+El primer paso fue confirmar la subida de una tabla, que todo funcionaba para los posteriores pasos
+
+Despues de acabar la limpieza de tosdas la tablas, se decide subir las de golpe.
+Encontré un pequeño problema, las tablas se subian sin la primera columna ya que me la quitaba considerando que era un índice.
+Una vez arreglado despues de varias pruebas se procede a la subida
+
+Se deciden cuales son las primary keys para cada tabla.
+
+ > Films necesita poder conectarse con actors, y para ello se genera una nueva tabla que contiene las ids de actors, category y id_film de la tabla old_hdd.
+
+ > Produczo esa conexion creando un query en workbench con un par de joins, y generando la tabla nueva llamada new_filmm
+
+ Una vez encontrada la capacidad para conectar estos datos, se procede a generar las conexiones entre tablas en el ERDD.
+
+ 
 
 2. Build your databse
 3.
