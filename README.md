@@ -20,7 +20,7 @@ El siguiente paso ha sido revisar si necesitaban cambios como limpiarlos, en con
 
 El primer paso fue confirmar la subida de una tabla, que todo funcionaba para los posteriores pasos
 
-Despues de acabar la limpieza de tosdas la tablas, se decide subir las de golpe.
+Despues de acabar la limpieza de tosdas la tablas, se decide subirlas de golpe.
 Encontré un pequeño problema, las tablas se subian sin la primera columna ya que me la quitaba considerando que era un índice.
 Una vez arreglado despues de varias pruebas se procede a la subida
 
